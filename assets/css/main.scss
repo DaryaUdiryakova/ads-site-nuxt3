@@ -1,0 +1,47 @@
+// @import "~bootstrap/dist/css/bootstrap.css";
+$blue: #4258b0; 
+$secondary: #b6b7cf;
+$form-range-track-bg: #efeeef;
+
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/functions";
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+.bg-block {
+  // background: rgba(0, 0, 0, 3.175);
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.title-section {
+  margin: 0 0 20px 0; 
+}
+:not(.btn-check) + .btn:active {
+  border-color: transparent;
+}
+label, legend {
+  color      : $secondary;
+  font-weight: bold;
+}
+.col-form-label {
+  padding-top: 0;
+}
+.btn-outline-primary {
+  border-color: #dee2e6;
+}
+input[type="checkbox"]+label {
+  color: $blue;
+}
+.item-parameters {
+  margin-bottom: 15px;
+  .badge {
+    margin-left: 5px;
+    vertical-align: text-top;
+  }
+  p:first-child {
+    margin-bottom: 5px;
+  }
+}
