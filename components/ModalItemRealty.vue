@@ -3,6 +3,7 @@ export default {
   props: ["product"],
 };
 </script>
+
 <template>
   <div>
     <div class="row align-items-start">
@@ -25,7 +26,6 @@ export default {
     </div>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 </style>

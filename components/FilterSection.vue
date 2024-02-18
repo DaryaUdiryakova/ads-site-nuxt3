@@ -15,7 +15,6 @@ export default {
           { id: 2, value: "apartment", name: "Квартира" },
           { id: 3, value: "room", name: "Комната" },
         ],
-
         countRoom: [
           { id: 0, value: 0, name: "Любое" },
           { id: 1, value: 1, name: "1" },
@@ -35,13 +34,11 @@ export default {
           { id: 6, year: 2021 },
           { id: 7, year: 2022 },
         ],
-
         transmissionType: [
           { id: 0, value: 0, name: "Любая" },
           { id: 1, value: "mechanical", name: "Механика" },
           { id: 2, value: "automatic", name: "Автомат" },
         ],
-
         bodyTypeCheck: [
           { id: 1, value: "sedan", name: "Седан" },
           { id: 2, value: "estate", name: "Универсал" },
@@ -56,7 +53,6 @@ export default {
           { id: 2, value: "32", name: "32 Гб" },
           { id: 3, value: "64", name: "64 Гб" },
         ],
-
         screenDiagonal: [
           { id: 0, value: 0, name: "Любая" },
           { id: 1, value: "13", name: "13" + '"' },
@@ -64,7 +60,6 @@ export default {
           { id: 3, value: "15", name: "15" + '"' },
           { id: 4, value: "17", name: "17" + '"' },
         ],
-
         processorTypeCheck: [
           { id: 1, value: "i9", name: "Intel Core i9" },
           { id: 2, value: "i7", name: "Intel Core i7" },
@@ -86,14 +81,12 @@ export default {
       },
     };
   },
-
   watch: {
     selectCategory(newCategory) {
       this.$emit("filterCategory", newCategory);
       this.clear();
     },
   },
-
   methods: {
     showFiltered() {
       let filterNoReactive = { ...toRaw(this.filter) };
@@ -133,6 +126,7 @@ export default {
   },
 };
 </script>
+
 <template>
   <div class="filter-section">
     <h3 class="title-section">Фильтр</h3>
@@ -225,7 +219,6 @@ export default {
           </template>
         </div>
       </fieldset>
-
     </div>
     <div v-else-if="selectCategory === 2">
       <div class="col-12 mb-3">
@@ -297,7 +290,6 @@ export default {
         </div>
       </fieldset>
     </div>
-
     <div v-else-if="selectCategory === 3">
       <fieldset class="col-12 mb-3">
         <legend class="col-form-label"> Объем оперативной памяти (ГБ)</legend>
@@ -325,7 +317,6 @@ export default {
           </template>
         </div>
       </fieldset>
-
       <fieldset class="col-12 mb-3">
         <legend class="col-form-label"> Диагональ экрана (дюйм)</legend>
         <div
@@ -352,7 +343,6 @@ export default {
           </template>
         </div>
       </fieldset>
-
       <fieldset class="col-12 mb-3">
         <legend class="col-form-label">Тип процессора</legend>
         <div>
@@ -388,9 +378,7 @@ export default {
       @click="showFiltered"
     >Показать</button>
   </div>
-
 </template>
-
 
 <style lang="scss" scoped>
 .filter-section {
@@ -398,7 +386,6 @@ export default {
   .btn-group {
     width: 100%;
   }
-
   .filter-section__btn-show {
     margin-top: 15px;
   }

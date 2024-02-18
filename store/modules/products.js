@@ -1,5 +1,5 @@
-
 import json from "~/static/products.json"
+
 const state = {
   products: json.products,
 };
@@ -12,7 +12,6 @@ const getters = {
       })
     return filteredSelectCategory
   },
-
   getProductsByFilter: (state, getters) => (filter, category, sort, like) => {
     let filtered = getters.getSelectCategory(category)
       .filter(product => {

@@ -1,5 +1,4 @@
 <template>
-
   <span
     class="vue-hover-slider__controls"
     :class="isShowControls"
@@ -17,7 +16,6 @@
       <span class="vue-hover-slider__control-mark"></span>
     </span>
   </span>
-
 </template>
 
 <script>

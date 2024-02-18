@@ -18,6 +18,7 @@ export default {
   },
 };
 </script>
+
 <template>
   <div class="wrap-card">
     <div
@@ -57,19 +58,16 @@ export default {
   </div>
 </template>
 
-
 <style lang="scss" scoped>
 .product-info {
   margin-left: 30px;
 }
 .wrap-card {
   position: relative;
-
   .card {
     margin: 20px 0;
     border: 0;
     cursor: pointer;
-
     .img-box {
       position: relative;
       overflow: hidden;

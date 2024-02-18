@@ -12,9 +12,9 @@ let propsFilter = {
   minPriceContent: "",
   maxPriceContent: "",
 };
+
 export default {
   name: "App",
-
   data() {
     return {
       category: { selectCategory: 0 },
@@ -28,7 +28,6 @@ export default {
       isActive: false,
     };
   },
-
   methods: {
     filterCategory(category) {
       this.category = { selectCategory: category };
@@ -82,8 +81,8 @@ export default {
   },
 };
 </script>
-<template>
 
+<template>
   <div
     id="app"
     class="row"
@@ -96,7 +95,6 @@ export default {
         :maxPrice="maxPriceRange"
       />
     </div>
-
     <div class="result-section col ">
       <h3 class="title-section"> Результаты</h3>
       <SortSection
@@ -104,7 +102,6 @@ export default {
         @sortTest="sortProd"
         @toggleLike="toggleLike"
       />
-
       <ItemCard
         v-for="product in newFilteredProducts"
         :product="product"
@@ -112,7 +109,6 @@ export default {
         @addLikeProducts='addLikeProducts'
         @showWindow="showWindow"
       />
-
       <ModalCard
         v-if="showModalIf"
         :product="showWindowData"
@@ -126,8 +122,8 @@ export default {
       </div>
     </div>
   </div>
-
 </template>
+
 <style lang="scss">
 #app {
   font-family: Helvetica, Arial, sans-serif;
@@ -139,7 +135,6 @@ export default {
   position: relative;
   .result-section {
     padding-left: 40px;
-
     .no-result {
       font-size: 25px;
       margin-top: 100px;

@@ -1,6 +1,7 @@
  <script>
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
+
 export default {
   props: ["product"],
   components: {
@@ -14,6 +15,7 @@ export default {
   },
 };
 </script>
+
 <template>
   <div
     class="modal-detailed"
@@ -108,12 +110,10 @@ export default {
             v-if="product.component == 'ModalItemLaptop'"
           />
         </div>
-
       </div>
     </div>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 .modal-detailed {
@@ -128,7 +128,6 @@ export default {
   z-index: 120;
   align-items: center;
   justify-content: center;
-
   .bg-window-dialog {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -143,9 +142,7 @@ export default {
     border-radius: 0.5rem;
     background: #fff;
     width: 60%;
-
     z-index: 120;
-
     .window-content {
       .window-header {
         align-items: flex-start;
@@ -153,7 +150,6 @@ export default {
         padding: 25px 25px 10px 25px;
         display: flex;
         flex-shrink: 0;
-
         justify-content: space-between;
         .modal-date {
           font-size: 14px;
@@ -171,7 +167,6 @@ export default {
         padding: 0 25px 25px 25px;
         overflow-y: auto;
         height: 55vh;
-
         .item-flex {
           display: flex;
           justify-content: flex-start;
@@ -179,7 +174,6 @@ export default {
           overflow-y: hidden;
           .photo-gallery {
             margin-bottom: 20px;
-
             .vueperslides {
               width: 400px;
               margin-top: 5px;

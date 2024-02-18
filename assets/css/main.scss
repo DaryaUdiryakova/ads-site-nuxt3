@@ -1,8 +1,6 @@
-// @import "~bootstrap/dist/css/bootstrap.css";
 $blue: #4258b0; 
 $secondary: #b6b7cf;
 $form-range-track-bg: #efeeef;
-
 
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap/scss/functions";
@@ -11,7 +9,6 @@ $form-range-track-bg: #efeeef;
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/root";
 .bg-block {
-  // background: rgba(0, 0, 0, 3.175);
   margin: 0;
   height: 100%;
   overflow: hidden;
